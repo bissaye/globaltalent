@@ -18,8 +18,6 @@ from django.urls import path
 from core.views import *
 
 
-router = routers.DefaultRouter()
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', reservations, name="index"),
