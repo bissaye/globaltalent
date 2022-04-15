@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservations</title>
+    <style>
+        th, td{
+            padding: 10px;
+            text-align: center;
+        }
+        table{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<table border=1>
+    <thead>
+        <tr>
+            <th>Rental_name</th>
+            <th>ID</th>
+            <th>Checkin</th>
+            <th>Checkout</th>
+            <th>Previous Reservation Id</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for key in result %}
+        <tr>
+        {% for item in key %}
+            <td>
+                {{item}}
+            </td>
+        {%endfor%}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
