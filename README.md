@@ -1,7 +1,7 @@
 # globaltalent
 # TEST CODE TASK - Mid Python Django Engineer - Remote
 
-superuser ino:
+superuser info:
 - username: root
 - password: root
 
