@@ -29,13 +29,24 @@
         </tr>
     </thead>
     <tbody>
-    {% for key in result %}
+
+    {% for value in result %}
         <tr>
-        {% for item in key %}
             <td>
-                {{item}}
+                {{value.rental.name}}
             </td>
-        {%endfor%}
+            <td>
+                {{value.id}}
+            </td>
+            <td>
+                {{value.checkin}}
+            </td>
+            <td>
+                {{value.checkout}}
+            </td>
+            <td>
+                {{value.prev}}
+            </td>
         </tr>
     {% endfor %}
     </tbody>
